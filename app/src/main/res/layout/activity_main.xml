@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="#FFFFFF">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="동명동"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/bm_font"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="어디!"
+                android:layout_gravity="center"
+                android:layout_marginRight="2dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/bm_font"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가?"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/bm_font"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/title"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/bm_font"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:src="@drawable/logo2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동명동"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:textSize="55dp"
+            android:fontFamily="@font/bm_font"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="어디!"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:textSize="55dp"
+            android:fontFamily="@font/bm_font"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가?"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:textSize="65dp"
+            android:fontFamily="@font/bm_font"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="종류보기"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_background_white"
+        android:gravity="center"
+        android:fontFamily="@font/bm_font"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="#FFFFFF"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전체보기"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_background_white"
+        android:gravity="center"
+        android:fontFamily="@font/bm_font"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="#FFFFFF"/>
+
+
+
+
+
+</LinearLayout>
