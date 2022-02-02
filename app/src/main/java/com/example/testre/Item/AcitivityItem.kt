@@ -1,18 +1,28 @@
-package com.example.testre.Bar
+package com.example.testre.Item
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.testre.ChatList
 import com.example.testre.R
 import com.example.testre.databinding.AcitivityItemBinding
-import com.example.testre.databinding.ListBarItemBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.*
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import com.squareup.picasso.Picasso
+
 
 
 class AcitivityItem : AppCompatActivity() {
     private lateinit var binding: AcitivityItemBinding
+
 
     private val barname: TextView by lazy {
         findViewById(R.id.tv_bar_item_name)
@@ -25,6 +35,9 @@ class AcitivityItem : AppCompatActivity() {
         findViewById(R.id.tv_bar_picture)
     }
 
+    private val auth: FirebaseAuth by lazy {
+        Firebase.auth
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = AcitivityItemBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -39,12 +52,7 @@ class AcitivityItem : AppCompatActivity() {
         // 의존성 추가 후 imageuri 연결
         val imageuri = intent.getStringExtra("picture");
         Picasso.with(this).load(imageuri).into(barPicture)
-        Log.d("ddddd",name.toString())
-        Log.d("ddddd",info.toString())
 
     }
+
 }
-
-
-
-

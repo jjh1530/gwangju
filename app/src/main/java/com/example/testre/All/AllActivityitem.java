@@ -12,7 +12,6 @@ import com.squareup.picasso.Picasso;
 
 // 전체 아이템 리스트 클릭시 넘어가는 아이템 페이지
 public class AllActivityitem extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +30,4 @@ public class AllActivityitem extends AppCompatActivity {
         tv_all_info.setText(intent.getStringExtra("info"));
 
     }
-
-
 }
