@@ -1,4 +1,4 @@
-package com.example.testre.Test;
+package com.example.testre.All;
 
 import android.content.Context;
 import android.content.Intent;

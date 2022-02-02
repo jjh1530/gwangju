@@ -148,6 +148,21 @@
         android:layout_marginRight="60dp"
         android:backgroundTint="#FFFFFF"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="지도"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_background_white"
+        android:gravity="center"
+        android:fontFamily="@font/bm_font"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="#FFFFFF"/>
+
 
 
 

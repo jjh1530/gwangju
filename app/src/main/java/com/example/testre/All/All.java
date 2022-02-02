@@ -1,4 +1,4 @@
-package com.example.testre.Test;
+package com.example.testre.All;
 
 public class All {
     private String num;

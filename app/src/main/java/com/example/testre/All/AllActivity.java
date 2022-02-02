@@ -1,4 +1,4 @@
-package com.example.testre.Test;
+package com.example.testre.All;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

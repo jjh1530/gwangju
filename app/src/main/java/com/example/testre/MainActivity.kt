@@ -5,14 +5,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
-import com.example.testre.Test.AllActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.testre.All.AllActivity
 
 
 class MainActivity : AppCompatActivity() {
+    private val btn_menu : Button by lazy {
+        findViewById(R.id.btn_menu)
+    }
+    private val btn_all : Button by lazy {
+        findViewById(R.id.btn_all)
+    }
+
+    private val btn_map : Button by lazy {
+        findViewById(R.id.btn_map)
+    }
     private var doubleBackToExit = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +36,11 @@ class MainActivity : AppCompatActivity() {
 
         btn_all.setOnClickListener {
             val intent = Intent(this, AllActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_map.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
         }
 
